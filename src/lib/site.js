@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "L'Étal d'Hyères",
   baseline: 'Votre boutique mode en plein air, au cœur des marchés de Hyères',
-  url: 'https://www.modemarchehyeres.fr',
+  url: 'https://nawal-hyeres.netlify.app/',
   locale: 'fr_FR',
   heroImage: '/images/hero-stall.webp',
 }
