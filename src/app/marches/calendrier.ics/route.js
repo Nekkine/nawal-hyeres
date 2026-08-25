@@ -76,7 +76,7 @@ function buildIcs() {
 
     lines.push(
       'BEGIN:VEVENT',
-      `UID:${uidBase}@modemarchehyeres.fr`,
+      `UID:${uidBase}@nawal-hyeres.netlify.app`,
       `DTSTAMP:${stamp}`,
       `DTSTART;TZID=Europe/Paris:${formatDateTime(start, market.start)}`,
       `DTEND;TZID=Europe/Paris:${formatDateTime(start, market.end)}`,
