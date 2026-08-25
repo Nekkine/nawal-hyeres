@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-lin-light font-sans text-encre antialiased transition-colors duration-300 dark:bg-encre dark:text-lin-light;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-terracotta text-white;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-azur ring-offset-2 ring-offset-lin-light dark:ring-offset-encre;
+  }
+}
+
+@layer components {
+  .container-marche {
+    @apply mx-auto w-full max-w-full px-4 sm:px-8 lg:px-16;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-terracotta px-6 py-3 font-semibold text-white shadow-parasol transition hover:bg-terracotta-dark active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-olive px-6 py-3 font-semibold text-olive-dark transition hover:bg-olive hover:text-white active:scale-[0.98] dark:border-olive-light dark:text-olive-light dark:hover:bg-olive dark:hover:text-white;
+  }
+}
